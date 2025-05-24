@@ -1,34 +1,34 @@
 import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import "./globals.css"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
+import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import Header from "@/components/header"
+import Footer from "@/components/footer"
+import { PageTransition } from "@/components/page-transition"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
-  title: "Ardent Pixel - Creating stunning designs for your brand",
+export const metadata = {
+  title: "Ardent Pixels | Creative Digital Agency",
   description:
-    "We transform your ideas into exceptional digital experiences that captivate your audience and drive results.",
+    "Ardent Pixels is a creative digital agency specializing in UI/UX design, web development, and digital marketing solutions.",
     generator: 'v0.dev'
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <div className="flex min-h-screen flex-col">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+      <body className={`${inter.className} bg-black text-white flex flex-col items-center`}>
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <Header />
+          <PageTransition>
+            <main className="w-full">{children}</main>
+          </PageTransition>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

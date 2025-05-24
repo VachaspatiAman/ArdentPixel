@@ -1,99 +1,122 @@
-"use client"
-
 import Link from "next/link"
-import { ArrowUp } from "lucide-react"
-import { motion } from "framer-motion"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import { AnimatedSection } from "@/components/animated-section"
 
 export default function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    })
-  }
-
   return (
-    <footer className="border-t bg-gradient-to-b from-white to-slate-50">
-      <div className="container py-8 md:py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div className="space-y-4">
-            <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold">
-                Ardent
-                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-                  Pixel
-                </span>
-              </span>
-            </Link>
-            <p className="text-sm text-muted-foreground">
-              We transform your ideas into exceptional digital experiences that captivate your audience and drive
-              results.
-            </p>
-          </div>
-          <div>
-            <h3 className="mb-4 text-sm font-semibold">Navigation</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/" className="text-muted-foreground hover:text-blue-500 transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-muted-foreground hover:text-blue-500 transition-colors">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/works" className="text-muted-foreground hover:text-blue-500 transition-colors">
-                  Works
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="mb-4 text-sm font-semibold">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/about" className="text-muted-foreground hover:text-blue-500 transition-colors">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/testimonials" className="text-muted-foreground hover:text-blue-500 transition-colors">
-                  Testimonials
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-muted-foreground hover:text-blue-500 transition-colors">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="mb-4 text-sm font-semibold">Contact</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="text-muted-foreground">hello@ardentpixel.com</li>
-              <li className="text-muted-foreground">+1 (555) 123-4567</li>
-              <li className="text-muted-foreground">123 Design Street, Creative City</li>
-            </ul>
-          </div>
+    <footer className="border-t border-gray-800 bg-black">
+      <div className="container mx-auto px-4 py-12 md:px-6">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <AnimatedSection delay={0.1}>
+            <div>
+              <Link href="/" className="mb-4 inline-block">
+                <Image
+                  src="/images/logo.png"
+                  alt="Ardent Pixels Logo"
+                  width={48}
+                  height={40}
+                  className="h-10 w-auto mb-4"
+                />
+              </Link>
+              <p className="mb-4 text-gray-400">
+                Company that can help you in developing your company for the future
+              </p>
+              {/* <div className="flex space-x-4">
+                <a href="https://www.instagram.com/ardent_pixels/" className="text-gray-300 hover:text-campus-orange transition-colors">
+                  <Instagram size={20} />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-campus-orange transition-colors">
+                  <Facebook size={20} />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-campus-orange transition-colors">
+                  <Twitter size={20} />
+                </a>
+                <a href="https://www.linkedin.com/company/ardent-pixels/" className="text-gray-300 hover:text-campus-orange transition-colors">
+                  <Linkedin size={20} />
+                </a>
+              </div> */}
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+            <div>
+              <h3 className="mb-4 text-lg font-semibold text-white">Quick Links</h3>
+              <ul className="space-y-2">
+                {[
+                  { href: "/", label: "Home" },
+                  { href: "/about", label: "About Us" },
+                  { href: "/work", label: "Our Work" },
+                  { href: "/services", label: "Services" },
+                  { href: "/contact", label: "Contact" },
+                ].map(({ href, label }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="text-gray-400 transition-all duration-300 hover:pl-2 hover:text-purple-400"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.3}>
+            <div>
+              <h3 className="mb-4 text-lg font-semibold text-white">Services</h3>
+              <ul className="space-y-2">
+                {[
+                  { href: "/services/digital-marketing", label: "Digital Marketing" },
+                  { href: "/services/development", label: "Development" },
+                  { href: "/services/graphic-design", label: "Graphic Design" },
+                  { href: "/services/video-editing", label: "Video Editing" },
+                  { href: "/services/photography", label: "Photography & Shoots" },
+                ].map(({ href, label }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="text-gray-400 transition-all duration-300 hover:pl-2 hover:text-purple-400"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.4}>
+            <div>
+              <h3 className="mb-4 text-lg font-semibold text-white">Follow</h3>
+              <p className="mb-4 text-gray-400">Follow us on Instagram and LinkedIn for the latest design trends, creative tips, and a behind-the-scenes look at our projects.</p>
+              <div className="space-y-2">
+                {/* <Input
+                  type="email"
+                  placeholder="Your email"
+                  className="border-gray-700 bg-gray-900 text-white placeholder:text-gray-500 focus:border-purple-500"
+                />
+                <Button className="w-full bg-gradient-to-r from-purple-500 to-purple-700 text-white transition-all duration-300 hover:from-purple-600 hover:to-purple-800">
+                  Subscribe
+                </Button> */}
+                <div className="flex space-x-4">
+                  <a href="https://www.instagram.com/ardent_pixels/" className="text-gray-300 hover:text-campus-orange transition-colors">
+                    <Instagram size={20} />
+                  </a>
+                  <a href="https://www.linkedin.com/company/ardent-pixels/" className="text-gray-300 hover:text-campus-orange transition-colors">
+                    <Linkedin size={20} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
-        <div className="mt-8 flex flex-col items-center justify-between border-t pt-8 md:flex-row">
-          <p className="mb-4 text-sm text-muted-foreground md:mb-0">
-            © {new Date().getFullYear()} Ardent Pixel. All rights reserved.
-          </p>
-          <div className="flex items-center space-x-4">
-            <motion.button
-              onClick={scrollToTop}
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
-              aria-label="Back to top"
-              whileHover={{ y: -3 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <ArrowUp className="h-5 w-5" />
-            </motion.button>
-          </div>
+
+        <div className="mt-8 border-t border-gray-800 pt-8 text-center">
+          <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Ardent Pixels. All rights reserved.</p>
         </div>
       </div>
     </footer>
