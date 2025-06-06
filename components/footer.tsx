@@ -14,7 +14,7 @@ export default function Footer() {
             <div>
               <Link href="/" className="mb-4 inline-block">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/footer.svg"
                   alt="Ardent Pixels Logo"
                   width={48}
                   height={40}
