@@ -1,10 +1,14 @@
+"use client"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedCard } from "@/components/animated-card"
+import { useRouter } from "next/navigation"
 
 export default function AboutPage() {
+  const router = useRouter()
+  // Redirect to home if the user tries to access this page directly
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -252,6 +256,7 @@ export default function AboutPage() {
           <Button
             size="lg"
             className="bg-gradient-to-r from-purple-500 to-purple-700 text-white transition-all duration-300 hover:from-purple-600 hover:to-purple-800 hover:scale-105"
+            onClick={() => router.push("/contact")}
           >
             Contact Us
             <ArrowRight className="ml-2 h-4 w-4" />

@@ -15,7 +15,7 @@ export default function ContactPage() {
           backgroundImage: "url('/images/background.png')",
           backgroundBlendMode: "overlay" 
           }}></div>
-        <AnimatedSection className="container relative z-10 mx-auto px-4 text-center min-h-[250px] min-wd-[1520px]">
+        <AnimatedSection className="relative z-10 mx-auto px-4 text-center min-h-[250px] w-full max-w-[1600px]">
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-white md:text-6xl">
             Get in{" "}
             <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">Touch</span>
@@ -28,10 +28,10 @@ export default function ContactPage() {
 
       {/* Contact Form Section */}
       <section className="bg-black py-20">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="mx-auto w-full max-w-[1600px] px-4 md:px-6">
           <div className="grid gap-12 md:grid-cols-2">
             <AnimatedSection delay={0.2}>
-              <div className="relative w-full max-w-[650px] h-auto min-h-[650px] rounded-xl overflow-hidden">
+              <div className="relative w-full max-w-[500px] aspect-[3/4] rounded-xl overflow-hidden">
                 <Image
                   src='/images/call.png'
                   alt="Contact Us"
@@ -137,7 +137,7 @@ export default function ContactPage() {
 
       {/* FAQ Section */}
       <section className="bg-black py-20">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className=" mx-auto w-full max-w-[1600px] px-4 md:px-6">
           <AnimatedSection className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-white">Frequently Asked Questions</h2>
             <p className="mx-auto max-w-2xl text-gray-400">

@@ -1,10 +1,14 @@
+"use client"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle, MessageSquare } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedCard } from "@/components/animated-card"
+import { useRouter } from "next/navigation"
+import { use } from "react"
 
 export default function Home() {
+  const router = useRouter()
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -54,11 +58,11 @@ export default function Home() {
                 <div className="h-full rounded-lg bg-gray-900 p-6">
                   <div className="mb-4 h-48 overflow-hidden rounded-lg">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/images/UIUX.png?height=400&width=600"
                       alt="UI/UX Design"
                       width={600}
                       height={400}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white">UI/UX Design</h3>
@@ -69,6 +73,7 @@ export default function Home() {
                   <Button
                     variant="outline"
                     className="border-purple-500 text-purple-400 transition-colors duration-300 hover:bg-purple-500 hover:text-white"
+                    onClick={() => router.push("/services#ui-ux-design")}
                   >
                     Learn More
                   </Button>
@@ -82,11 +87,11 @@ export default function Home() {
                 <div className="h-full rounded-lg bg-gray-900 p-6">
                   <div className="mb-4 h-48 overflow-hidden rounded-lg">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/images/web.png? height=400&width=600"
                       alt="Web Development"
                       width={600}
                       height={400}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white">Web Development</h3>
@@ -96,6 +101,7 @@ export default function Home() {
                   <Button
                     variant="outline"
                     className="border-purple-500 text-purple-400 transition-colors duration-300 hover:bg-purple-500 hover:text-white"
+                    onClick={() => router.push("/services#web-development")}
                   >
                     Learn More
                   </Button>
@@ -204,6 +210,7 @@ export default function Home() {
           <Button
             size="lg"
             className="bg-white text-purple-700 transition-all duration-300 hover:bg-gray-100 hover:scale-105"
+            onClick={() => router.push("/contact")}
           >
             Contact Us
             <ArrowRight className="ml-2 h-4 w-4" />

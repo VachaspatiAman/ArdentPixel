@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} bg-black text-white flex flex-col items-center`}>
+      <body className={`${inter.className} bg-black text-white flex flex-col`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
           <PageTransition>

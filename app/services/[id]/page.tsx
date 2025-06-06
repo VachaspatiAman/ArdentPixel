@@ -14,7 +14,7 @@ const services = {
     subtitle: "Grow your online presence and reach your target audience",
     description:
       "Our digital marketing services help businesses of all sizes establish a strong online presence, reach their target audience, and achieve their marketing goals. We combine data-driven strategies with creative excellence to deliver exceptional results across all digital channels.",
-    heroImage: "/placeholder.svg?height=800&width=1600&text=Digital+Marketing+Services",
+    heroImage: "/images/background.png?height=800&width=1600&text=Digital+Marketing+Services",
     features: [
       "Comprehensive digital marketing strategy development",
       "Social media marketing and management",
@@ -32,36 +32,36 @@ const services = {
       "Make data-driven marketing decisions",
     ],
     portfolio: [
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Social+Campaign+1",
-        alt: "Social Media Campaign",
-        caption: "Social Media Campaign for Tech Company",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=SEO+Project",
-        alt: "SEO Project",
-        caption: "SEO Optimization for E-commerce Website",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=PPC+Campaign",
-        alt: "PPC Campaign",
-        caption: "Google Ads Campaign for SaaS Business",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Email+Marketing",
-        alt: "Email Marketing",
-        caption: "Email Marketing Automation for Retail Brand",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Content+Strategy",
-        alt: "Content Strategy",
-        caption: "Content Marketing Strategy for B2B Company",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Analytics+Dashboard",
-        alt: "Analytics Dashboard",
-        caption: "Custom Analytics Dashboard for Marketing Metrics",
-      },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Social+Campaign+1",
+      //   alt: "Social Media Campaign",
+      //   caption: "Social Media Campaign for Tech Company",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=SEO+Project",
+      //   alt: "SEO Project",
+      //   caption: "SEO Optimization for E-commerce Website",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=PPC+Campaign",
+      //   alt: "PPC Campaign",
+      //   caption: "Google Ads Campaign for SaaS Business",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Email+Marketing",
+      //   alt: "Email Marketing",
+      //   caption: "Email Marketing Automation for Retail Brand",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Content+Strategy",
+      //   alt: "Content Strategy",
+      //   caption: "Content Marketing Strategy for B2B Company",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Analytics+Dashboard",
+      //   alt: "Analytics Dashboard",
+      //   caption: "Custom Analytics Dashboard for Marketing Metrics",
+      // },
     ],
     testimonials: [
       {
@@ -105,36 +105,36 @@ const services = {
       "Stay ahead of the competition with innovative technology",
     ],
     portfolio: [
-      {
-        src: "/placeholder.svg?height=500&width=700&text=E-commerce+Site",
-        alt: "E-commerce Website",
-        caption: "Custom E-commerce Platform for Fashion Brand",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Mobile+App",
-        alt: "Mobile App",
-        caption: "iOS and Android App for Fitness Tracking",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Web+Application",
-        alt: "Web Application",
-        caption: "Financial Management Web Application",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Dashboard",
-        alt: "Dashboard",
-        caption: "Custom Analytics Dashboard for Healthcare Provider",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=API+Integration",
-        alt: "API Integration",
-        caption: "Third-party API Integration for Travel Platform",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=PWA",
-        alt: "Progressive Web App",
-        caption: "Progressive Web App for News Organization",
-      },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=E-commerce+Site",
+      //   alt: "E-commerce Website",
+      //   caption: "Custom E-commerce Platform for Fashion Brand",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Mobile+App",
+      //   alt: "Mobile App",
+      //   caption: "iOS and Android App for Fitness Tracking",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Web+Application",
+      //   alt: "Web Application",
+      //   caption: "Financial Management Web Application",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Dashboard",
+      //   alt: "Dashboard",
+      //   caption: "Custom Analytics Dashboard for Healthcare Provider",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=API+Integration",
+      //   alt: "API Integration",
+      //   caption: "Third-party API Integration for Travel Platform",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=PWA",
+      //   alt: "Progressive Web App",
+      //   caption: "Progressive Web App for News Organization",
+      // },
     ],
     testimonials: [
       {
@@ -179,36 +179,36 @@ const services = {
       "Increase engagement with visually appealing content",
     ],
     portfolio: [
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Logo+Design",
-        alt: "Logo Design",
-        caption: "Brand Identity for Technology Startup",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Packaging",
-        alt: "Packaging Design",
-        caption: "Product Packaging for Organic Food Brand",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Brochure",
-        alt: "Brochure Design",
-        caption: "Corporate Brochure for Financial Services",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Social+Graphics",
-        alt: "Social Media Graphics",
-        caption: "Social Media Campaign Graphics",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Annual+Report",
-        alt: "Annual Report",
-        caption: "Annual Report Design for Nonprofit",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Infographic",
-        alt: "Infographic",
-        caption: "Data Visualization for Research Findings",
-      },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Logo+Design",
+      //   alt: "Logo Design",
+      //   caption: "Brand Identity for Technology Startup",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Packaging",
+      //   alt: "Packaging Design",
+      //   caption: "Product Packaging for Organic Food Brand",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Brochure",
+      //   alt: "Brochure Design",
+      //   caption: "Corporate Brochure for Financial Services",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Social+Graphics",
+      //   alt: "Social Media Graphics",
+      //   caption: "Social Media Campaign Graphics",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Annual+Report",
+      //   alt: "Annual Report",
+      //   caption: "Annual Report Design for Nonprofit",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Infographic",
+      //   alt: "Infographic",
+      //   caption: "Data Visualization for Research Findings",
+      // },
     ],
     testimonials: [
       {
@@ -252,36 +252,36 @@ const services = {
       "Showcase your brand's personality and values",
     ],
     portfolio: [
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Commercial",
-        alt: "Commercial",
-        caption: "TV Commercial for Retail Brand",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Social+Video",
-        alt: "Social Video",
-        caption: "Instagram Video Campaign for Fashion Brand",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Corporate+Video",
-        alt: "Corporate Video",
-        caption: "Corporate Overview Video for Tech Company",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Product+Demo",
-        alt: "Product Demo",
-        caption: "Product Demonstration for Consumer Electronics",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Animation",
-        alt: "Animation",
-        caption: "Animated Explainer Video for SaaS Product",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Event+Coverage",
-        alt: "Event Coverage",
-        caption: "Conference Highlight Video",
-      },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Commercial",
+      //   alt: "Commercial",
+      //   caption: "TV Commercial for Retail Brand",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Social+Video",
+      //   alt: "Social Video",
+      //   caption: "Instagram Video Campaign for Fashion Brand",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Corporate+Video",
+      //   alt: "Corporate Video",
+      //   caption: "Corporate Overview Video for Tech Company",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Product+Demo",
+      //   alt: "Product Demo",
+      //   caption: "Product Demonstration for Consumer Electronics",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Animation",
+      //   alt: "Animation",
+      //   caption: "Animated Explainer Video for SaaS Product",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Event+Coverage",
+      //   alt: "Event Coverage",
+      //   caption: "Conference Highlight Video",
+      // },
     ],
     testimonials: [
       {
@@ -325,36 +325,36 @@ const services = {
       "Stand out with professional visual content",
     ],
     portfolio: [
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Product+Photography",
-        alt: "Product Photography",
-        caption: "Product Photography for E-commerce",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Corporate+Headshots",
-        alt: "Corporate Headshots",
-        caption: "Executive Team Headshots",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Event+Photos",
-        alt: "Event Photography",
-        caption: "Corporate Event Coverage",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Lifestyle",
-        alt: "Lifestyle Photography",
-        caption: "Lifestyle Brand Photography",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Architecture",
-        alt: "Architectural Photography",
-        caption: "Office Space and Architecture",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700&text=Food",
-        alt: "Food Photography",
-        caption: "Food and Beverage Photography for Restaurant",
-      },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Product+Photography",
+      //   alt: "Product Photography",
+      //   caption: "Product Photography for E-commerce",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Corporate+Headshots",
+      //   alt: "Corporate Headshots",
+      //   caption: "Executive Team Headshots",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Event+Photos",
+      //   alt: "Event Photography",
+      //   caption: "Corporate Event Coverage",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Lifestyle",
+      //   alt: "Lifestyle Photography",
+      //   caption: "Lifestyle Brand Photography",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Architecture",
+      //   alt: "Architectural Photography",
+      //   caption: "Office Space and Architecture",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=500&width=700&text=Food",
+      //   alt: "Food Photography",
+      //   caption: "Food and Beverage Photography for Restaurant",
+      // },
     ],
     testimonials: [
       {

@@ -5,13 +5,15 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Contact, Menu, X } from "lucide-react"
 import { motion } from "framer-motion"
+import { useRouter } from "next/navigation"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
+  const router = useRouter()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -98,7 +100,10 @@ export default function Header() {
 
         <div className="hidden md:block">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button className="bg-gradient-to-r from-[#E20B6F] to-[#AB4FFD] text-white transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+            <Button
+             className="bg-gradient-to-r from-[#E20B6F] to-[#AB4FFD] text-white transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20"
+             onClick={() => router.push("/contact")}
+             >
               Get Started
             </Button>
           </motion.div>
@@ -155,7 +160,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <Link href="/contact">
+               <Link href="/contact" >
                 <Button className="w-full bg-gradient-to-r from-purple-500 to-purple-700 text-white transition-all duration-300 hover:from-purple-600 hover:to-purple-800">
                   Get Started
                 </Button>

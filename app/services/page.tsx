@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle } from "lucide-react"
@@ -5,8 +6,10 @@ import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedCard } from "@/components/animated-card"
 import { ImageCarousel } from "@/components/image-carousel"
 import { ImageGallery } from "@/components/image-gallery"
+import { useRouter } from "next/navigation"
 
 export default function ServicesPage() {
+  const router = useRouter()
   // Sample services data with multiple images
   const services = [
     {
@@ -19,26 +22,26 @@ export default function ServicesPage() {
         { src: "/placeholder.svg?height=600&width=800&text=PPC+Advertising", alt: "PPC Advertising" },
       ],
       galleryImages: [
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Social+Analytics",
-          alt: "Social Analytics",
-          caption: "Social Media Analytics",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Content+Marketing",
-          alt: "Content Marketing",
-          caption: "Content Marketing Strategy",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Email+Campaign",
-          alt: "Email Campaign",
-          caption: "Email Marketing Campaign",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=SEO+Audit",
-          alt: "SEO Audit",
-          caption: "SEO Performance Audit",
-        },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Social+Analytics",
+        //   alt: "Social Analytics",
+        //   caption: "Social Media Analytics",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Content+Marketing",
+        //   alt: "Content Marketing",
+        //   caption: "Content Marketing Strategy",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Email+Campaign",
+        //   alt: "Email Campaign",
+        //   caption: "Email Marketing Campaign",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=SEO+Audit",
+        //   alt: "SEO Audit",
+        //   caption: "SEO Performance Audit",
+        // },
       ],
       features: [
         "Social Media Marketing",
@@ -58,31 +61,31 @@ export default function ServicesPage() {
         { src: "/placeholder.svg?height=600&width=800&text=E-commerce", alt: "E-commerce Development" },
       ],
       galleryImages: [
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Responsive+Design",
-          alt: "Responsive Design",
-          caption: "Responsive Web Design",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Custom+CMS",
-          alt: "Custom CMS",
-          caption: "Custom Content Management Systems",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=API+Integration",
-          alt: "API Integration",
-          caption: "Third-party API Integration",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Database+Design",
-          alt: "Database Design",
-          caption: "Database Architecture",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Cloud+Deployment",
-          alt: "Cloud Deployment",
-          caption: "Cloud Infrastructure Setup",
-        },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Responsive+Design",
+        //   alt: "Responsive Design",
+        //   caption: "Responsive Web Design",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Custom+CMS",
+        //   alt: "Custom CMS",
+        //   caption: "Custom Content Management Systems",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=API+Integration",
+        //   alt: "API Integration",
+        //   caption: "Third-party API Integration",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Database+Design",
+        //   alt: "Database Design",
+        //   caption: "Database Architecture",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Cloud+Deployment",
+        //   alt: "Cloud Deployment",
+        //   caption: "Cloud Infrastructure Setup",
+        // },
       ],
       features: [
         "Website Development",
@@ -102,26 +105,26 @@ export default function ServicesPage() {
         { src: "/placeholder.svg?height=600&width=800&text=Packaging", alt: "Packaging Design" },
       ],
       galleryImages: [
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Logo+Design",
-          alt: "Logo Design",
-          caption: "Logo Design & Branding",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Business+Cards",
-          alt: "Business Cards",
-          caption: "Business Cards & Stationery",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Brochures",
-          alt: "Brochures",
-          caption: "Marketing Brochures",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Packaging",
-          alt: "Packaging",
-          caption: "Product Packaging Design",
-        },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Logo+Design",
+        //   alt: "Logo Design",
+        //   caption: "Logo Design & Branding",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Business+Cards",
+        //   alt: "Business Cards",
+        //   caption: "Business Cards & Stationery",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Brochures",
+        //   alt: "Brochures",
+        //   caption: "Marketing Brochures",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Packaging",
+        //   alt: "Packaging",
+        //   caption: "Product Packaging Design",
+        // },
       ],
       features: ["Logo Design", "Brand Identity", "Print Design", "Packaging Design", "Marketing Materials"],
     },
@@ -135,22 +138,22 @@ export default function ServicesPage() {
         { src: "/placeholder.svg?height=600&width=800&text=Motion+Graphics", alt: "Motion Graphics" },
       ],
       galleryImages: [
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Commercial",
-          alt: "Commercial Production",
-          caption: "TV Commercial Production",
-        },
-        { src: "/placeholder.svg?height=400&width=600&text=Animation", alt: "Animation", caption: "2D & 3D Animation" },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Social+Video",
-          alt: "Social Video",
-          caption: "Social Media Video Content",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Product+Demo",
-          alt: "Product Demo",
-          caption: "Product Demonstration Videos",
-        },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Commercial",
+        //   alt: "Commercial Production",
+        //   caption: "TV Commercial Production",
+        // },
+        // { src: "/placeholder.svg?height=400&width=600&text=Animation", alt: "Animation", caption: "2D & 3D Animation" },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Social+Video",
+        //   alt: "Social Video",
+        //   caption: "Social Media Video Content",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Product+Demo",
+        //   alt: "Product Demo",
+        //   caption: "Product Demonstration Videos",
+        // },
       ],
       features: [
         "Commercial Video Production",
@@ -170,31 +173,31 @@ export default function ServicesPage() {
         { src: "/placeholder.svg?height=600&width=800&text=Event+Coverage", alt: "Event Coverage" },
       ],
       galleryImages: [
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Product+Photography",
-          alt: "Product Photography",
-          caption: "Professional Product Photography",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Corporate+Headshots",
-          alt: "Corporate Headshots",
-          caption: "Corporate Team Headshots",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Event+Coverage",
-          alt: "Event Coverage",
-          caption: "Corporate Event Coverage",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Location+Shoot",
-          alt: "Location Shoot",
-          caption: "On-location Photography",
-        },
-        {
-          src: "/placeholder.svg?height=400&width=600&text=Lifestyle",
-          alt: "Lifestyle Photography",
-          caption: "Lifestyle Product Photography",
-        },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Product+Photography",
+        //   alt: "Product Photography",
+        //   caption: "Professional Product Photography",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Corporate+Headshots",
+        //   alt: "Corporate Headshots",
+        //   caption: "Corporate Team Headshots",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Event+Coverage",
+        //   alt: "Event Coverage",
+        //   caption: "Corporate Event Coverage",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Location+Shoot",
+        //   alt: "Location Shoot",
+        //   caption: "On-location Photography",
+        // },
+        // {
+        //   src: "/placeholder.svg?height=400&width=600&text=Lifestyle",
+        //   alt: "Lifestyle Photography",
+        //   caption: "Lifestyle Product Photography",
+        // },
       ],
       features: [
         "Product Photography",
@@ -351,6 +354,7 @@ export default function ServicesPage() {
           <Button
             size="lg"
             className="bg-white text-purple-700 transition-all duration-300 hover:bg-gray-100 hover:scale-105"
+            onClick={() => router.push("/contact")}
           >
             Get in Touch
           </Button>

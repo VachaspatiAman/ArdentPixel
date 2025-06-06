@@ -6,8 +6,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedCard } from "@/components/animated-card"
 import { motion } from "framer-motion"
+import { useRouter } from "next/navigation"
 
 export default function WorkPage() {
+  const router = useRouter();
+  // Animation variants for the card
   // Sample project data with new categories
   const projects = [
     // {
@@ -21,21 +24,19 @@ export default function WorkPage() {
       id: 2,
       title: "College event promotion",
       category: "Advertisement Post",
-      image: "/images/addRight.png? height=600&width=800&text=College+Event+Ad",
+      image: "/images/AddRight.png? height=600&width=800&text=College+Event+Ad",
     },
     {
       id: 3,
       title: "Event Announcement",
       category: "Advertisement Post",
       image: "/images/AddLeft.png? height=600&width=800&text=Event+Ad",
-      description: "Advertisement for upcoming corporate event.",
     },
     {
       id: 4,
-      title: "Product Showcase",
+      title: "Showcase",
       category: "Advertisement Post",
-      image: "/placeholder.svg?height=600&width=800&text=Product+Ad",
-      description: "Advertisement highlighting product features.",
+      image: "/images/Add.png?height=600&width=800&text=Product+Ad",
     },
     // {
     //   id: 5,
@@ -63,62 +64,59 @@ export default function WorkPage() {
     // Logo Work
     {
       id: 9,
-      title: "Tech Startup Logo",
+      title: "Forces and Fashion",
       category: "Logo Work",
-      image: "/placeholder.svg?height=600&width=800&text=Tech+Logo",
-      description: "Modern logo design for technology startup.",
+      image: "/images/1.png?height=600&width=800&text=Tech+Logo",
     },
     {
       id: 10,
       title: "Restaurant Brand",
       category: "Logo Work",
-      image: "/placeholder.svg?height=600&width=800&text=Restaurant+Logo",
-      description: "Elegant logo for upscale restaurant.",
+      image: "/images/2.png?height=600&width=800&text=Restaurant+Logo",
     },
     {
       id: 11,
       title: "Fitness Brand",
       category: "Logo Work",
-      image: "/placeholder.svg?height=600&width=800&text=Fitness+Logo",
+      image: "/images/3.png?height=600&width=800&text=Fitness+Logo",
       description: "Dynamic logo for fitness center.",
     },
-    {
-      id: 12,
-      title: "E-commerce Logo",
-      category: "Logo Work",
-      image: "/placeholder.svg?height=600&width=800&text=E-commerce+Logo",
-      description: "Modern logo for online retail platform.",
-    },
-    {
-      id: 13,
-      title: "Education Institute",
-      category: "Logo Work",
-      image: "/placeholder.svg?height=600&width=800&text=Education+Logo",
-      description: "Professional logo for educational institution.",
-    },
-    // Removed 6th Logo Work
-    {
-      id: 15,
-      title: "Entertainment Company",
-      category: "Logo Work",
-      image: "/placeholder.svg?height=600&width=800&text=Entertainment+Logo",
-      description: "Creative logo for entertainment business.",
-    },
-    {
-      id: 16,
-      title: "Real Estate Brand",
-      category: "Logo Work",
-      image: "/placeholder.svg?height=600&width=800&text=Real+Estate+Logo",
-      description: "Trustworthy logo for real estate agency.",
-    },
+    // {
+    //   id: 12,
+    //   title: "E-commerce Logo",
+    //   category: "Logo Work",
+    //   image: "/placeholder.svg?height=600&width=800&text=E-commerce+Logo",
+    //   description: "Modern logo for online retail platform.",
+    // },
+    // {
+    //   id: 13,
+    //   title: "Education Institute",
+    //   category: "Logo Work",
+    //   image: "/placeholder.svg?height=600&width=800&text=Education+Logo",
+    //   description: "Professional logo for educational institution.",
+    // },
+    // // Removed 6th Logo Work
+    // {
+    //   id: 15,
+    //   title: "Entertainment Company",
+    //   category: "Logo Work",
+    //   image: "/placeholder.svg?height=600&width=800&text=Entertainment+Logo",
+    //   description: "Creative logo for entertainment business.",
+    // },
+    // {
+    //   id: 16,
+    //   title: "Real Estate Brand",
+    //   category: "Logo Work",
+    //   image: "/placeholder.svg?height=600&width=800&text=Real+Estate+Logo",
+    //   description: "Trustworthy logo for real estate agency.",
+    // },
 
     // APP Design
     {
       id: 17,
-      title: "Finance App",
+      title: "E-Commerce App",
       category: "APP Design",
-      image: "/placeholder.svg?height=600&width=800&text=Finance+App",
-      description: "Mobile banking application with secure authentication.",
+      image: "/images/.png?height=600&width=800&text=Ecommerce+App",
     },
     {
       id: 18,
@@ -131,52 +129,51 @@ export default function WorkPage() {
       id: 19,
       title: "Food Delivery",
       category: "APP Design",
-      image: "/placeholder.svg?height=600&width=800&text=Food+App",
-      description: "User-friendly food delivery application.",
+      image: "/images/app2.png?height=600&width=800&text=Food+App",
     },
-    {
-      id: 20,
-      title: "Travel Companion",
-      category: "APP Design",
-      image: "/placeholder.svg?height=600&width=800&text=Travel+App",
-      description: "Travel planning and booking application.",
-    },
-    {
-      id: 21,
-      title: "E-learning Platform",
-      category: "APP Design",
-      image: "/placeholder.svg?height=600&width=800&text=Learning+App",
-      description: "Educational application for online courses.",
-    },
-    // Removed 6th APP Design
-    {
-      id: 23,
-      title: "Social Network",
-      category: "APP Design",
-      image: "/placeholder.svg?height=600&width=800&text=Social+App",
-      description: "Social media application with interactive features.",
-    },
-    {
-      id: 24,
-      title: "Healthcare Monitor",
-      category: "APP Design",
-      image: "/placeholder.svg?height=600&width=800&text=Healthcare+App",
-      description: "Health monitoring and medical appointment application.",
-    },
+    // {
+    //   id: 20,
+    //   title: "Travel Companion",
+    //   category: "APP Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Travel+App",
+    //   description: "Travel planning and booking application.",
+    // },
+    // {
+    //   id: 21,
+    //   title: "E-learning Platform",
+    //   category: "APP Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Learning+App",
+    //   description: "Educational application for online courses.",
+    // },
+    // // Removed 6th APP Design
+    // {
+    //   id: 23,
+    //   title: "Social Network",
+    //   category: "APP Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Social+App",
+    //   description: "Social media application with interactive features.",
+    // },
+    // {
+    //   id: 24,
+    //   title: "Healthcare Monitor",
+    //   category: "APP Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Healthcare+App",
+    //   description: "Health monitoring and medical appointment application.",
+    // },
 
     // Website Design
     {
       id: 25,
       title: "Corporate Website",
       category: "Website Design",
-      image: "/placeholder.svg?height=600&width=800&text=Corporate+Website",
+      image: "/?height=600&width=800&text=Corporate+Website",
       description: "Professional website for corporate client.",
     },
     {
       id: 26,
       title: "E-commerce Platform",
       category: "Website Design",
-      image: "/placeholder.svg?height=600&width=800&text=E-commerce+Website",
+      image: "/images/web1.png?height=600&width=800&text=E-commerce+Website",
       description: "Fully responsive e-commerce platform with custom checkout.",
     },
     {
@@ -186,138 +183,125 @@ export default function WorkPage() {
       image: "/placeholder.svg?height=600&width=800&text=Portfolio+Website",
       description: "Creative portfolio website for design professional.",
     },
-    {
-      id: 28,
-      title: "Educational Platform",
-      category: "Website Design",
-      image: "/placeholder.svg?height=600&width=800&text=Education+Website",
-      description: "Learning management system for educational institution.",
-    },
-    {
-      id: 29,
-      title: "News Portal",
-      category: "Website Design",
-      image: "/placeholder.svg?height=600&width=800&text=News+Website",
-      description: "News and media website with content management system.",
-    },
-    // Removed 6th Website Design
-    {
-      id: 31,
-      title: "Travel Agency",
-      category: "Website Design",
-      image: "/placeholder.svg?height=600&width=800&text=Travel+Website",
-      description: "Travel agency website with booking features.",
-    },
-    {
-      id: 32,
-      title: "Healthcare Provider",
-      category: "Website Design",
-      image: "/placeholder.svg?height=600&width=800&text=Healthcare+Website",
-      description: "Healthcare provider website with patient portal.",
-    },
+    // {
+    //   id: 28,
+    //   title: "Educational Platform",
+    //   category: "Website Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Education+Website",
+    //   description: "Learning management system for educational institution.",
+    // },
+    // {
+    //   id: 29,
+    //   title: "News Portal",
+    //   category: "Website Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=News+Website",
+    //   description: "News and media website with content management system.",
+    // },
+    // // Removed 6th Website Design
+    // {
+    //   id: 31,
+    //   title: "Travel Agency",
+    //   category: "Website Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Travel+Website",
+    //   description: "Travel agency website with booking features.",
+    // },
+    // {
+    //   id: 32,
+    //   title: "Healthcare Provider",
+    //   category: "Website Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Healthcare+Website",
+    //   description: "Healthcare provider website with patient portal.",
+    // },
 
     // Banner Design
     {
       id: 33,
       title: "Conference Banner",
       category: "Banner Design",
-      image: "/placeholder.svg?height=600&width=800&text=Conference+Banner",
+      image: "/images/banner2.png?height=600&width=800&text=Conference+Banner",
       description: "Banner for technology conference.",
     },
     {
       id: 34,
       title: "Product Launch",
       category: "Banner Design",
-      image: "/placeholder.svg?height=600&width=800&text=Product+Launch+Banner",
+      image: "/images/banner3.png?height=600&width=800&text=Product+Launch+Banner",
       description: "Banner for new product announcement.",
     },
     {
       id: 35,
       title: "Sale Campaign",
       category: "Banner Design",
-      image: "/placeholder.svg?height=600&width=800&text=Sale+Banner",
+      image: "/images/banner1.png?height=600&width=800&text=Sale+Banner",
       description: "Promotional banner for seasonal sale.",
     },
-    {
-      id: 36,
-      title: "Web Banner",
-      category: "Banner Design",
-      image: "/placeholder.svg?height=600&width=800&text=Web+Banner",
-      description: "Digital banner for website header.",
-    },
-    {
-      id: 37,
-      title: "Exhibition Banner",
-      category: "Banner Design",
-      image: "/placeholder.svg?height=600&width=800&text=Exhibition+Banner",
-      description: "Large format banner for exhibition display.",
-    },
-    // Removed 6th Banner Design
-    {
-      id: 39,
-      title: "Event Promotion",
-      category: "Banner Design",
-      image: "/placeholder.svg?height=600&width=800&text=Event+Banner",
-      description: "Banner for promoting upcoming event.",
-    },
-    {
-      id: 40,
-      title: "Holiday Banner",
-      category: "Banner Design",
-      image: "/placeholder.svg?height=600&width=800&text=Holiday+Banner",
-      description: "Festive banner for holiday season promotion.",
-    },
+    // {
+    //   id: 36,
+    //   title: "Web Banner",
+    //   category: "Banner Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Web+Banner",
+    //   description: "Digital banner for website header.",
+    // },
+    // {
+    //   id: 37,
+    //   title: "Exhibition Banner",
+    //   category: "Banner Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Exhibition+Banner",
+    //   description: "Large format banner for exhibition display.",
+    // },
+    // // Removed 6th Banner Design
+    // {
+    //   id: 39,
+    //   title: "Event Promotion",
+    //   category: "Banner Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Event+Banner",
+    //   description: "Banner for promoting upcoming event.",
+    // },
+    // {
+    //   id: 40,
+    //   title: "Holiday Banner",
+    //   category: "Banner Design",
+    //   image: "/placeholder.svg?height=600&width=800&text=Holiday+Banner",
+    //   description: "Festive banner for holiday season promotion.",
+    // },
 
     // T-Shirt Design
     {
       id: 41,
       title: "Corporate T-Shirt",
       category: "T-Shirt Design",
-      image: "/placeholder.svg?height=600&width=800&text=Corporate+T-Shirt",
-      description: "Professional t-shirt design for corporate team.",
+      image: "/images/tshirt3.png?height=600&width=800&text=Corporate+T-Shirt",
     },
     {
       id: 42,
       title: "Event Merchandise",
       category: "T-Shirt Design",
-      image: "/placeholder.svg?height=600&width=800&text=Event+T-Shirt",
-      description: "T-shirt design for event attendees.",
+      image: "/images/tshirt1.png?height=600&width=800&text=Event+T-Shirt",
     },
     {
       id: 43,
       title: "Brand Apparel",
       category: "T-Shirt Design",
-      image: "/placeholder.svg?height=600&width=800&text=Brand+T-Shirt",
-      description: "T-shirt featuring brand logo and messaging.",
+      image: "/images/tshirt2.png?height=600&width=800&text=Brand+T-Shirt",
     },
     {
       id: 44,
-      title: "Artistic Design",
-      category: "T-Shirt Design",
-      image: "/placeholder.svg?height=600&width=800&text=Art+T-Shirt",
-      description: "Creative artistic illustration for casual t-shirt.",
+      title: "Certificate",
+      category: "Certificate Design",
+      image: "/images/certificate1.png?height=600&width=800&text=Art+certificate",
     },
     {
       id: 45,
-      title: "Sports Team",
-      category: "T-Shirt Design",
-      image: "/placeholder.svg?height=600&width=800&text=Sports+T-Shirt",
-      description: "Team jersey design for sports club.",
+      title: "Invitation Card",
+      category: "Card Design",
+      image: "/images/card1.png?height=600&width=800&text=card+design",
     },
     // Removed 6th T-Shirt Design
     {
       id: 47,
-      title: "Typography Design",
-      category: "T-Shirt Design",
-      image: "/placeholder.svg?height=600&width=800&text=Typography+T-Shirt",
-      description: "Typography-focused t-shirt design with message.",
-    },
-    {
-      id: 48,
-      title: "Minimalist Design",
-      category: "T-Shirt Design",
-      image: "/placeholder.svg?height=600&width=800&text=Minimalist+T-Shirt",
-      description: "Clean, minimalist t-shirt design.",
+      title: "Visiting Design",
+      category: "Card Design",
+      image: "/images/card2.png?height=600&width=800&text=Visiting+Card",
     },
   ]
 
@@ -350,7 +334,7 @@ export default function WorkPage() {
                 <TabsTrigger value="all" className="data-[state=active]:bg-purple-600 data-[state=active]:text-white">
                   All Projects
                 </TabsTrigger>
-                <TabsTrigger
+                {/* <TabsTrigger
                   value="advertisement-post"
                   className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
                 >
@@ -385,7 +369,7 @@ export default function WorkPage() {
                   className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
                 >
                   T-Shirt Design
-                </TabsTrigger>
+                </TabsTrigger> */}
               </TabsList>
             </AnimatedSection>
 
@@ -484,6 +468,7 @@ export default function WorkPage() {
           <Button
             size="lg"
             className="bg-white text-purple-700 transition-all duration-300 hover:bg-gray-100 hover:scale-105"
+            onClick={() => router.push("/contact")}
           >
             Start a Project
           </Button>
