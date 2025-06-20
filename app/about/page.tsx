@@ -63,7 +63,7 @@ export default function AboutPage() {
       </section>
 
       {/* Meet Our Founders */}
-      <section className="bg-gradient-to-br from-gray-900 to-black py-20">
+{/*       <section className="bg-gradient-to-br from-gray-900 to-black py-20">
         <div className="container mx-auto px-4 md:px-6">
           <AnimatedSection className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-white md:text-5xl bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
@@ -164,7 +164,7 @@ export default function AboutPage() {
             </AnimatedCard>
           </div>
         </div >
-      </section >
+      </section > */}
 
       {/* What Sets Us Apart */}
       < section className="bg-black py-20" >
