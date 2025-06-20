@@ -63,7 +63,7 @@ export default function AboutPage() {
       </section>
 
       {/* Meet Our Founders */}
-{/*       <section className="bg-gradient-to-br from-gray-900 to-black py-20">
+      <section className="bg-gradient-to-br from-gray-900 to-black py-20">
         <div className="container mx-auto px-4 md:px-6">
           <AnimatedSection className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-white md:text-5xl bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
@@ -106,13 +106,13 @@ export default function AboutPage() {
                       Thank you for being part of this journey—let’s create something extraordinary together
                     </p>
                     <div className="mt-6 pt-6 border-t border-gray-700">
-                      {/* <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2">
                         {["Design", "Strategy", "Leadership", "Innovation"].map((skill) => (
                           <span key={skill} className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-sm">
                             {skill}
                           </span>
                         ))}
-                      </div> */}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -134,8 +134,8 @@ export default function AboutPage() {
                         className="object-cover z-0 transition-transform duration-700 group-hover:scale-105"
                       />
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 z-30">
-                        {/* <h3 className="text-2xl font-bold text-white mb-1">Rishav Raj</h3>
-                        <p className="text-purple-400 text-lg">Founder & Chief Operation Officer</p> */}
+                        {/* <h3 className="text-2xl font-bold text-white mb-1">Rishav Raj</h3> */}
+                        <p className="text-purple-400 text-lg">Founder & Chief Operation Officer</p>
                       </div>
                     </div>
                   </div>
@@ -150,13 +150,13 @@ export default function AboutPage() {
                       and our clients receive the very best—every single time.
                     </p>
                     <div className="mt-6 pt-6 border-t border-gray-700">
-                      {/* <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2">
                         {["Creativity", "Branding", "UX/UI", "Leadership"].map((skill) => (
                           <span key={skill} className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-sm">
                             {skill}
                           </span>
                         ))}
-                      </div> */}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
             </AnimatedCard>
           </div>
         </div >
-      </section > */}
+      </section >
 
       {/* What Sets Us Apart */}
       < section className="bg-black py-20" >
@@ -267,6 +267,6 @@ export default function AboutPage() {
           </Button>
         </AnimatedSection>
       </section >
-    </div >
-  )
-}
+      </div >
+    );
+  }
