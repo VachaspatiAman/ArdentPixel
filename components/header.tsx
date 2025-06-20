@@ -47,7 +47,7 @@ export default function Header() {
         borderImage: "linear-gradient(to right, #E20B6F, #AB4FFD) 1 round-b-[30px]",
       }}
     >
-      <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#E20B6F] to-[#AB4FFD] rounded-b-[35px]"></div>
+      {/* <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#E20B6F] to-[#AB4FFD] rounded-b-[35px]"></div> */}
       <div className="flex h-16 w-full items-center justify-between px-6 md:px-12 lg:px-[120px]">
         <Link href="/" className="flex items-center">
           <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
