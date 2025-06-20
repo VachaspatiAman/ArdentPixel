@@ -63,24 +63,24 @@ export default function AboutPage() {
       </section>
 
       {/* Meet Our Founders */}
-      <section className="bg-gradient-to-br from-gray-900 to-black py-20">
-        <div className="container mx-auto px-4 md:px-6">
-          <AnimatedSection className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-white md:text-5xl bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
-              Meet Our Founders
-            </h2>
-            <p className="mx-auto max-w-2xl text-gray-300 text-lg">
-              The visionaries who brought Ardent Pixels to life.
-            </p>
-          </AnimatedSection>
+      {/* <section className="bg-gradient-to-br from-gray-900 to-black py-20"> */}
+        {/* <div className="container mx-auto px-4 md:px-6"> */}
+          {/* <AnimatedSection className="mb-12 text-center"> */}
+            {/* <h2 className="mb-4 text-3xl font-bold text-white md:text-5xl bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent"> */}
+              {/* Meet Our Founders */}
+            {/* </h2> */}
+            {/* <p className="mx-auto max-w-2xl text-gray-300 text-lg"> */}
+              {/* The visionaries who brought Ardent Pixels to life. */}
+            {/* </p> */}
+          {/* </AnimatedSection> */}
 
-          <div className="grid gap-12 md:grid-cols-2">
+          {/* <div className="grid gap-12 md:grid-cols-2"> */}
             {/* Founder 1 */}
-            <AnimatedCard delay={0.2}>
-              <div className="overflow-hidden rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 p-1 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 group">
-                <div className="rounded-lg bg-gray-900 p-8">
-                  <div className="flex flex-col items-center mb-8">
-                    <div className="relative w-[371px] h-[395.5px] overflow-hidden rounded-lg mb-6 group-hover:shadow-xl transition-all duration-500">
+            {/* <AnimatedCard delay={0.2}> */}
+              {/* <div className="overflow-hidden rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 p-1 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 group"> */}
+                {/* <div className="rounded-lg bg-gray-900 p-8"> */}
+                  {/* <div className="flex flex-col items-center mb-8"> */}
+                    {/* <div className="relative w-[371px] h-[395.5px] overflow-hidden rounded-lg mb-6 group-hover:shadow-xl transition-all duration-500">
                       <div className="absolute inset-0 bg-gradient-to-br from-black to transparent opacity-30 z-10 group-hover:opacity-40 transition-opacity duration-500"></div>
                       <div className="absolute inset-0 border-2 border-purple-500/50 z-20 rounded-lg group-hover:border-purple-500/80 transition-colors duration-500"></div>
                       <Image
@@ -89,23 +89,23 @@ export default function AboutPage() {
                         fill
                         className="object-cover z-0 transition-transform duration-700 group-hover:scale-105"
                       />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 z-30">
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 z-30"> */}
                       {/* <h3 className="text-2xl font-bold text-white mb-1">Anirudh Kaushik</h3>
                       <p className="text-purple-400 text-lg">Founder & Chief Strategy Officer</p> */}
-                    </div>
-                    </div>
-                  </div>
+                    {/* </div> */}
+                    {/* </div> */}
+                  {/* </div> */}
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg">
+                  {/* <div className="bg-gray-800/50 p-6 rounded-lg"> */}
                     {/* <h3 className="text-2xl font-bold text-white mb-1">Anirudh Kaushik</h3> */}
-                    <p className="text-purple-400 text-lg">Founder & Chief Strategy Officer</p>
-                    <p className="text-gray-300 leading-relaxed">
+                    {/* <p className="text-purple-400 text-lg">Founder & Chief Strategy Officer</p> */}
+                    {/* <p className="text-gray-300 leading-relaxed">
                       Ardent Pixels started as a vision—a dream to create cutting-edge, user-friendly, and impactful digital experiences.
                       For me, it's not just about building websites or services; it's about crafting stories, pushing creative boundaries, and delivering solutions that make a difference.
                       Every project we take on is a step toward shaping the future of digital innovation.
                       Thank you for being part of this journey—let’s create something extraordinary together
-                    </p>
-                    <div className="mt-6 pt-6 border-t border-gray-700">
+                    </p> */}
+                    {/* <div className="mt-6 pt-6 border-t border-gray-700">
                       <div className="flex flex-wrap gap-2">
                         {["Design", "Strategy", "Leadership", "Innovation"].map((skill) => (
                           <span key={skill} className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-sm">
@@ -113,18 +113,18 @@ export default function AboutPage() {
                           </span>
                         ))}
                       </div>
-                    </div>
-                  </div>
+                    </div> */}
+                  {/* </div>
                 </div>
-              </div>
-            </AnimatedCard>
+              </div> */}
+            {/* </AnimatedCard> */}
 
             {/* Founder 2 */}
-            <AnimatedCard delay={0.4}>
-              <div className="overflow-hidden rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 p-1 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 group">
-                <div className="rounded-lg bg-gray-900 p-8">
-                  <div className="flex flex-col items-center mb-8">
-                    <div className="relative w-[371px] h-[395.5px] overflow-hidden rounded-lg mb-6 group-hover:shadow-xl transition-all duration-500">
+            {/* <AnimatedCard delay={0.4}> */}
+              {/* <div className="overflow-hidden rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 p-1 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 group"> */}
+                {/* <div className="rounded-lg bg-gray-900 p-8"> */}
+                  {/* <div className="flex flex-col items-center mb-8"> */}
+                    {/* <div className="relative w-[371px] h-[395.5px] overflow-hidden rounded-lg mb-6 group-hover:shadow-xl transition-all duration-500">
                       <div className="absolute inset-0 bg-gradient-to-br from-black to transparent opacity-30 z-10 group-hover:opacity-40 transition-opacity duration-500"></div>
                       <div className="absolute inset-0 border-2 border-purple-500/50 z-20 rounded-lg group-hover:border-purple-500/80 transition-colors duration-500"></div>
                       <Image
@@ -135,36 +135,36 @@ export default function AboutPage() {
                       />
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 z-30">
                         {/* <h3 className="text-2xl font-bold text-white mb-1">Rishav Raj</h3> */}
-                        <p className="text-purple-400 text-lg">Founder & Chief Operation Officer</p>
-                      </div>
-                    </div>
-                  </div>
+                        {/* <p className="text-purple-400 text-lg">Founder & Chief Operation Officer</p> */}
+                      {/* </div> */}
+                    {/* </div> */}
+                  {/* </div> */}
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg">
+                  {/* <div className="bg-gray-800/50 p-6 rounded-lg"> */}
                     {/* <h3 className="text-2xl font-bold text-white mb-1">Rishav Raj</h3> */}
-                    <p className="text-purple-400 text-lg">Founder & Chief Operation Officer</p>
-                    <p className="text-gray-300 leading-relaxed">
-                      Behind every successful project at Ardent Pixels lies a strong foundation of seamless operations and smart execution.
+                    {/* <p className="text-purple-400 text-lg">Founder & Chief Operation Officer</p> */}
+                    {/* <p className="text-gray-300 leading-relaxed"> */}
+                      {/* Behind every successful project at Ardent Pixels lies a strong foundation of seamless operations and smart execution.
                       We focus on making sure every process flows effortlessly—promoting smooth teamwork, clear communication, and efficient problem-solving.
                       Our goal is to deliver high-quality solutions quickly and precisely, so teams stay aligned, creative energy stays high,
-                      and our clients receive the very best—every single time.
-                    </p>
-                    <div className="mt-6 pt-6 border-t border-gray-700">
+                      and our clients receive the very best—every single time. */}
+                    {/* </p> */}
+                    {/* <div className="mt-6 pt-6 border-t border-gray-700">
                       <div className="flex flex-wrap gap-2">
                         {["Creativity", "Branding", "UX/UI", "Leadership"].map((skill) => (
                           <span key={skill} className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-sm">
                             {skill}
                           </span>
                         ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </AnimatedCard>
-          </div>
-        </div >
-      </section >
+                      </div> */}
+                    {/* </div> */}
+                  {/* </div> */}
+                {/* </div> */}
+              {/* </div> */}
+            {/* </AnimatedCard> */}
+          {/* </div> */}
+        {/* </div > */}
+      {/* </section > */}
 
       {/* What Sets Us Apart */}
       < section className="bg-black py-20" >
