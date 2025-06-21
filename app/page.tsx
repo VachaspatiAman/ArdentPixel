@@ -87,7 +87,7 @@ export default function Home() {
                 <div className="h-full rounded-lg bg-gray-900 p-6">
                   <div className="mb-4 h-48 overflow-hidden rounded-lg">
                     <Image
-                      src="/images/webDev.png?height=400&width=600"
+                      src="/images/web1.png?height=400&width=600"
                       alt="Web Development"
                       width={600}
                       height={400}
