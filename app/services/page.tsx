@@ -56,8 +56,8 @@ export default function ServicesPage() {
       title: "Development",
       description: "Custom web and mobile development solutions tailored to your specific business needs.",
       mainImages: [
-        { src: "/images/web2.jpg?height=600&width=800&text=Web+Development", alt: "Web Development" },
-        { src: "/images/web3.jpg?height=600&width=800&text=Mobile+App", alt: "Mobile App Development" },
+        { src: "/images/web25.png?height=600&width=800&text=Web+Development", alt: "Web Development" },
+        { src: "/images/App23.png?height=600&width=800&text=Mobile+App", alt: "Mobile App Development" },
         { src: "/images/web1.png?height=600&width=800&text=E-commerce", alt: "E-commerce Development" },
       ],
       galleryImages: [
@@ -100,8 +100,8 @@ export default function ServicesPage() {
       title: "Graphic Design",
       description: "Creative graphic design services to enhance your brand identity and visual communication.",
       mainImages: [
-        { src: "/images/UIUX2.png?height=600&width=800&text=Brand+Identity", alt: "Brand Identity" },
-        { src: "/images/UIUX.png?height=600&width=800&text=Print+Design", alt: "Print Design" },
+        { src: "/images/UIUX.png?height=600&width=800&text=Brand+Identity", alt: "Brand Identity" },
+        { src: "/images/UIUX2.png?height=600&width=800&text=Print+Design", alt: "Print Design" },
         { src: "/images/certificate1.png?height=600&width=800&text=Packaging", alt: "Packaging Design" },
       ],
       galleryImages: [
@@ -210,7 +210,7 @@ export default function ServicesPage() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col pt-16 md:pt-0">
       {/* Hero Section */}
       <section className="relative w-full bg-gradient-to-br from-black to-gray-900 py-20 md:py-32">
         <div className="absolute inset-0 bg-cover bg-center opacity-100"

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, CheckCircle, Star } from "lucide-react"
+import { ArrowLeft, CheckCircle, Quote, Star } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 import { AnimatedCard } from "@/components/animated-card"
 import { ImageGallery } from "@/components/image-gallery"
@@ -66,19 +66,21 @@ const services = {
     testimonials: [
       {
         quote:
-          "The digital marketing strategy Ardent Pixels developed for us transformed our online presence and led to a 150% increase in qualified leads.",
-        author: "Sarah Johnson",
-        position: "Marketing Director, TechSolutions Inc.",
-        company: "TechSolutions Inc.",
-        avatar: "/placeholder.svg?height=100&width=100&text=SJ",
+          "Ardent Pixels transformed our digital presence. Their expertise in PPC and content marketing positioned our brand ahead of the competition. Can’t recommend them enough.",
+        position: "Founder, TechTribe Solutions",
+        company: "TechTribe Solutions",
       },
       {
         quote:
-          "Their SEO expertise helped us achieve first-page rankings for our most valuable keywords, resulting in a significant boost in organic traffic and sales.",
-        author: "Michael Chen",
-        position: "E-commerce Manager",
-        company: "StyleHub",
-        avatar: "/placeholder.svg?height=100&width=100&text=MC",
+          "Our online campaigns saw a dramatic boost after collaborating with Ardent Pixels. Their digital marketing strategies led to a 75% increase in leads within one quarter!",
+        position: "Marketing Director, UrbanNest Realty",
+        company: "UrbanNest Realty",
+      },
+      {
+        quote:
+          "The analytics and reporting from Ardent Pixels are incredibly clear and actionable. Our engagement and click-through rates have never been higher.",
+        position: "E-commerce Lead, CraftSmith Supplies",
+        company: "CraftSmith Supplies",
       },
     ],
   },
@@ -139,20 +141,22 @@ const services = {
     testimonials: [
       {
         quote:
-          "Ardent Pixels built our e-commerce platform from the ground up, delivering a solution that not only looks beautiful but also drove a 35% increase in online sales.",
-        author: "David Rodriguez",
-        position: "CEO",
-        company: "Artisan Goods Co.",
-        avatar: "/placeholder.svg?height=100&width=100&text=DR",
+          "Ardent Pixels built a fast, secure website that’s easy for us to update. The entire process was smooth, and their team was responsive throughout.",
+        position: "IT Head, MedGen Diagnostics",
+        company: "MedGen Diagnostics",
       },
       {
         quote:
-          "Their development team created a mobile app that exceeded our expectations. The app has received rave reviews from our users and has significantly improved our customer engagement.",
-        author: "Jennifer Liu",
-        position: "Product Manager",
-        company: "HealthTrack",
-        avatar: "/placeholder.svg?height=100&width=100&text=JL",
+          "Our e-commerce app, developed by Ardent Pixels, looks fantastic and functions flawlessly. User reviews have been overwhelmingly positive.",
+        position: "Founder, GlamCart",
+        company: "GlamCart",
       },
+      {
+        quote:
+          "The Ardent Pixels team transformed our vision into a feature-packed, user-friendly website. The launch was seamless and support continues to be great.",
+        position: "CTO, InnovateX Solutions",
+        company: "InnovateX Solutions",
+      }
     ],
   },
   // Additional services would be defined similarly
@@ -213,20 +217,22 @@ const services = {
     testimonials: [
       {
         quote:
-          "The brand identity Ardent Pixels created for our startup perfectly captures our vision and values. Their design work has been instrumental in establishing our market presence.",
-        author: "Alex Thompson",
-        position: "Founder",
-        company: "NovaTech",
-        avatar: "/placeholder.svg?height=100&width=100&text=AT",
+          "Ardent Pixels elevated our mobile app with stunning UI/UX design. Our users have shared great feedback on its ease-of-use and modern look. Truly a game-changer for us!",
+        position: "Product Manager, FinTech Solutions",
+        company: "FinTech Solutions",
       },
       {
         quote:
-          "Their packaging design for our product line led to a 40% increase in retail sales. The designs were not only beautiful but also effective in communicating our brand story.",
-        author: "Emma Garcia",
-        position: "Marketing Manager",
-        company: "Pure Harvest",
-        avatar: "/placeholder.svg?height=100&width=100&text=EG",
+          "We partnered with Ardent Pixels for a website redesign. Their UX insights boosted user engagement by 40%. Highly professional and creative team!",
+        position: "Head of Digital, EduNext Learning",
+        company: "EduNext Learning",
       },
+      {
+        quote:
+          "From wireframes to final design, Ardent Pixels delivered exceptional UI/UX that set our SaaS platform apart. Our customers love it, and so do we!",
+        position: "Technical Lead, TaskBoard Pro",
+        company: "TaskBoard Pro",
+      }
     ],
   },
   "video-editing": {
@@ -290,7 +296,6 @@ const services = {
         author: "Chris Martinez",
         position: "Brand Director",
         company: "InnovateTech",
-        avatar: "/placeholder.svg?height=100&width=100&text=CM",
       },
       {
         quote:
@@ -298,7 +303,6 @@ const services = {
         author: "Rebecca Kim",
         position: "Marketing VP",
         company: "GlobalSolutions",
-        avatar: "/placeholder.svg?height=100&width=100&text=RK",
       },
     ],
   },
@@ -488,15 +492,6 @@ export default function ServicePage({ params }: { params: { id: string } }) {
                     </div>
                     <p className="mb-6 text-gray-300 italic leading-relaxed">"{testimonial.quote}"</p>
                     <div className="flex items-center">
-                      <div className="mr-4 h-12 w-12 overflow-hidden rounded-full">
-                        <Image
-                          src={testimonial.avatar || "/placeholder.svg"}
-                          alt={testimonial.author}
-                          width={48}
-                          height={48}
-                          className="h-full w-full object-cover"
-                        />
-                      </div>
                       <div>
                         <p className="font-semibold text-white">{testimonial.author}</p>
                         <p className="text-sm text-gray-400">

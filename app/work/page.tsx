@@ -22,21 +22,18 @@ export default function WorkPage() {
     // },
     {
       id: 2,
-      title: "College event promotion",
       category: "Advertisement Post",
       image: "/images/AddRight.png? height=600&width=800&text=College+Event+Ad",
     },
     {
       id: 3,
-      title: "Event Announcement",
       category: "Advertisement Post",
-      image: "/images/AddLeft.png? height=600&width=800&text=Event+Ad",
+      image: "/images/Add.png? height=600&width=800&text=Event+Ad",
     },
     {
       id: 4,
-      title: "Showcase",
       category: "Advertisement Post",
-      image: "/images/Add.png?height=600&width=800&text=Product+Ad",
+      image: "/images/AddLeft.png?height=600&width=800&text=Product+Ad",
     },
     // {
     //   id: 5,
@@ -64,22 +61,18 @@ export default function WorkPage() {
     // Logo Work
     {
       id: 9,
-      title: "Forces and Fashion",
       category: "Logo Work",
       image: "/images/1.png?height=600&width=800&text=Tech+Logo",
     },
     {
       id: 10,
-      title: "Restaurant Brand",
       category: "Logo Work",
       image: "/images/2.png?height=600&width=800&text=Restaurant+Logo",
     },
     {
       id: 11,
-      title: "Fitness Brand",
       category: "Logo Work",
       image: "/images/3.png?height=600&width=800&text=Fitness+Logo",
-      description: "Dynamic logo for fitness center.",
     },
     // {
     //   id: 12,
@@ -114,22 +107,18 @@ export default function WorkPage() {
     // APP Design
     {
       id: 17,
-      title: "E-Commerce App",
       category: "APP Design",
-      image: "/images/.png?height=600&width=800&text=Ecommerce+App",
+      image: "/images/app1.png?height=600&width=800&text=Ecommerce+App",
     },
     {
       id: 18,
-      title: "Fitness Tracker",
       category: "APP Design",
-      image: "/placeholder.svg?height=600&width=800&text=Fitness+App",
-      description: "Health and fitness tracking application.",
+      image: "/images/App23.png?height=600&width=800&text=Fitness+App",
     },
     {
       id: 19,
-      title: "Food Delivery",
       category: "APP Design",
-      image: "/images/app2.png?height=600&width=800&text=Food+App",
+      image: "/images/App2.png?height=600&width=800&text=Food+App",
     },
     // {
     //   id: 20,
@@ -164,24 +153,18 @@ export default function WorkPage() {
     // Website Design
     {
       id: 25,
-      title: "Corporate Website",
       category: "Website Design",
-      image: "/?height=600&width=800&text=Corporate+Website",
-      description: "Professional website for corporate client.",
+      image: "/images/web1.png?height=600&width=800&text=Corporate+Website",
     },
     {
       id: 26,
-      title: "E-commerce Platform",
       category: "Website Design",
-      image: "/images/web1.png?height=600&width=800&text=E-commerce+Website",
-      description: "Fully responsive e-commerce platform with custom checkout.",
+      image: "/images/web.png?height=600&width=800&text=E-commerce+Website",
     },
     {
       id: 27,
-      title: "Portfolio Site",
       category: "Website Design",
-      image: "/placeholder.svg?height=600&width=800&text=Portfolio+Website",
-      description: "Creative portfolio website for design professional.",
+      image: "/images/web25.png?height=600&width=800&text=Portfolio+Website",
     },
     // {
     //   id: 28,
@@ -216,24 +199,18 @@ export default function WorkPage() {
     // Banner Design
     {
       id: 33,
-      title: "Conference Banner",
       category: "Banner Design",
-      image: "/images/banner2.png?height=600&width=800&text=Conference+Banner",
-      description: "Banner for technology conference.",
+      image: "/images/banner1.png?height=600&width=800&text=Conference+Banner",
     },
     {
       id: 34,
-      title: "Product Launch",
       category: "Banner Design",
-      image: "/images/banner3.png?height=600&width=800&text=Product+Launch+Banner",
-      description: "Banner for new product announcement.",
+      image: "/images/banner2.png?height=600&width=800&text=Product+Launch+Banner",
     },
     {
       id: 35,
-      title: "Sale Campaign",
       category: "Banner Design",
-      image: "/images/banner1.png?height=600&width=800&text=Sale+Banner",
-      description: "Promotional banner for seasonal sale.",
+      image: "/images/banner3.png?height=600&width=800&text=Sale+Banner",
     },
     // {
     //   id: 36,
@@ -270,7 +247,7 @@ export default function WorkPage() {
       id: 41,
       title: "Corporate T-Shirt",
       category: "T-Shirt Design",
-      image: "/images/tshirt3.png?height=600&width=800&text=Corporate+T-Shirt",
+      image: "/images/tshirt2.png?height=600&width=800&text=Corporate+T-Shirt",
     },
     {
       id: 42,
@@ -282,7 +259,7 @@ export default function WorkPage() {
       id: 43,
       title: "Brand Apparel",
       category: "T-Shirt Design",
-      image: "/images/tshirt2.png?height=600&width=800&text=Brand+T-Shirt",
+      image: "/images/tshirt3.png?height=600&width=800&text=Brand+T-Shirt",
     },
     {
       id: 44,
@@ -294,19 +271,23 @@ export default function WorkPage() {
       id: 45,
       title: "Invitation Card",
       category: "Card Design",
-      image: "/images/card1.png?height=600&width=800&text=card+design",
+      image: "/images/card2.png?height=600&width=800&text=card+design",
     },
     // Removed 6th T-Shirt Design
     {
       id: 47,
-      title: "Visiting Design",
       category: "Card Design",
-      image: "/images/card2.png?height=600&width=800&text=Visiting+Card",
+      image: "/images/card1.png?height=600&width=800&text=Visiting+Card",
+    },
+    {
+      id: 48,
+      category: "Card Design",
+      image: "/images/card3.png?height=600&width=800&text=Business+Card",
     },
   ]
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col pt-16 md:pt-0">
       {/* Hero Section */}
       <section className="relative w-full bg-gradient-to-br from-black to-gray-900 py-20 md:py-32">
         <div className="absolute inset-0 bg-cover bg-center opacity-100"
@@ -325,137 +306,133 @@ export default function WorkPage() {
         </AnimatedSection>
       </section>
 
-      {/* Portfolio Section */}
-      <section className="bg-black py-20">
+      {/* Custom Portfolio Sections by Category */}
+      {/* Advertisement Post */}
+      <section className="py-12 bg-black border-t-4 border-b-4 border-purple-400/30">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-300">
+          Advertising <span className="text-pink-400">Post</span>
+        </h2>
         <div className="container mx-auto px-4 md:px-6">
-          <Tabs defaultValue="all" className="w-full">
-            <AnimatedSection className="mb-8 flex justify-center">
-              <TabsList className="bg-gray-900">
-                <TabsTrigger value="all" className="data-[state=active]:bg-purple-600 data-[state=active]:text-white">
-                  All Projects
-                </TabsTrigger>
-                {/* <TabsTrigger
-                  value="advertisement-post"
-                  className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
-                >
-                  Advertisement Post
-                </TabsTrigger>
-                <TabsTrigger
-                  value="logo-work"
-                  className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
-                >
-                  Logo Work
-                </TabsTrigger>
-                <TabsTrigger
-                  value="app-design"
-                  className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
-                >
-                  APP Design
-                </TabsTrigger>
-                <TabsTrigger
-                  value="website-design"
-                  className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
-                >
-                  Website Design
-                </TabsTrigger>
-                <TabsTrigger
-                  value="banner-design"
-                  className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
-                >
-                  Banner Design
-                </TabsTrigger>
-                <TabsTrigger
-                  value="t-shirt-design"
-                  className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
-                >
-                  T-Shirt Design
-                </TabsTrigger> */}
-              </TabsList>
-            </AnimatedSection>
-
-            <TabsContent value="all" className="mt-0">
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {projects.map((project, index) => (
-                  <AnimatedCard key={project.id} delay={0.1 * ((index % 9) + 1)}>
-                    <ProjectCard project={project} />
-                  </AnimatedCard>
-                ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="advertisement-post" className="mt-0">
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {projects
-                  .filter((project) => project.category === "Advertisement Post")
-                  .map((project, index) => (
-                    <AnimatedCard key={project.id} delay={0.1 * (index + 1)}>
-                      <ProjectCard project={project} />
-                    </AnimatedCard>
-                  ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="logo-work" className="mt-0">
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {projects
-                  .filter((project) => project.category === "Logo Work")
-                  .map((project, index) => (
-                    <AnimatedCard key={project.id} delay={0.1 * (index + 1)}>
-                      <ProjectCard project={project} />
-                    </AnimatedCard>
-                  ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="app-design" className="mt-0">
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {projects
-                  .filter((project) => project.category === "APP Design")
-                  .map((project, index) => (
-                    <AnimatedCard key={project.id} delay={0.1 * (index + 1)}>
-                      <ProjectCard project={project} />
-                    </AnimatedCard>
-                  ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="website-design" className="mt-0">
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {projects
-                  .filter((project) => project.category === "Website Design")
-                  .map((project, index) => (
-                    <AnimatedCard key={project.id} delay={0.1 * (index + 1)}>
-                      <ProjectCard project={project} />
-                    </AnimatedCard>
-                  ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="banner-design" className="mt-0">
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {projects
-                  .filter((project) => project.category === "Banner Design")
-                  .map((project, index) => (
-                    <AnimatedCard key={project.id} delay={0.1 * (index + 1)}>
-                      <ProjectCard project={project} />
-                    </AnimatedCard>
-                  ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="t-shirt-design" className="mt-0">
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {projects
-                  .filter((project) => project.category === "T-Shirt Design")
-                  .map((project, index) => (
-                    <AnimatedCard key={project.id} delay={0.1 * (index + 1)}>
-                      <ProjectCard project={project} />
-                    </AnimatedCard>
-                  ))}
-              </div>
-            </TabsContent>
-          </Tabs>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.filter(p => p.category === "Advertisement Post").map((project, idx) => (
+              <AnimatedCard key={project.id} delay={0.1 * (idx + 1)}>
+                <ProjectCard project={project} />
+              </AnimatedCard>
+            ))}
+          </div>
         </div>
+      </section>
+
+      {/* Logo Work */}
+      <section className="py-12 bg-black border-b-4 border-purple-400/30">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-300">
+          Logos <span className="text-pink-400">Work</span>
+        </h2>
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.filter(p => p.category === "Logo Work").map((project, idx) => (
+              <AnimatedCard key={project.id} delay={0.1 * (idx + 1)}>
+                <ProjectCard project={project} />
+              </AnimatedCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* APP Design */}
+      <section className="py-12 bg-black border-b-4 border-purple-400/30">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-300">
+          App <span className="text-pink-400">Design</span>
+        </h2>
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.filter(p => p.category === "APP Design").map((project, idx) => (
+              <AnimatedCard key={project.id} delay={0.1 * (idx + 1)}>
+                <ProjectCard project={project} />
+              </AnimatedCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Website Design */}
+      <section className="py-12 bg-black border-b-4 border-purple-400/30">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-300">
+          Website <span className="text-pink-400">Design</span>
+        </h2>
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.filter(p => p.category === "Website Design").map((project, idx) => (
+              <AnimatedCard key={project.id} delay={0.1 * (idx + 1)}>
+                <ProjectCard project={project} />
+              </AnimatedCard>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Banner Design */}
+      <section className="py-12 bg-black border-b-4 border-purple-400/30">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-300">
+          Banner <span className="text-pink-400">Design</span>
+        </h2>
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.filter(p => p.category === "Banner Design").map((project, idx) => (
+              <AnimatedCard key={project.id} delay={0.1 * (idx + 1)}>
+                <ProjectCard project={project} />
+              </AnimatedCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* T-Shirt Design */}
+      <section className="py-12 bg-black border-b-4 border-purple-400/30">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-300">
+          T-Shirt <span className="text-pink-400">Design</span>
+        </h2>
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.filter(p => p.category === "T-Shirt Design").map((project, idx) => (
+              <AnimatedCard key={project.id} delay={0.1 * (idx + 1)}>
+                <ProjectCard project={project} />
+              </AnimatedCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Card Design */}
+      <section className="py-12 bg-black border-b-4 border-purple-400/30">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-300">
+          Card <span className="text-pink-400">Design</span>
+        </h2>
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.filter(p => p.category === "Card Design").map((project, idx) => (
+              <AnimatedCard key={project.id} delay={0.1 * (idx + 1)}>
+                <ProjectCard project={project} />
+              </AnimatedCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-gradient-to-r from-purple-900 to-purple-700 py-16">
+        <AnimatedSection className="container mx-auto px-4 text-center md:px-6">
+          <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">Have a project in mind?</h2>
+          <p className="mx-auto mb-8 max-w-2xl text-purple-100">
+            Let's bring your vision to life. Our team is ready to help you create something amazing.
+          </p>
+          <Button
+            size="lg"
+            className="bg-white text-purple-700 transition-all duration-300 hover:bg-gray-100 hover:scale-105"
+            onClick={() => router.push("/contact")}
+          >
+            Start a Project
+          </Button>
+        </AnimatedSection>
       </section>
 
       {/* CTA Section */}
@@ -482,7 +459,7 @@ function ProjectCard({ project }: { project: any }) {
   // Animation variants for the image container
   const imageContainerVariants = {
     initial: {
-      boxShadow: "0 0 0 rgba(139, 92, 246, 0)",
+      boxShadow: "0 0 0 rgba(127, 76, 254, 0)",
     },
     hover: {
       boxShadow: "0 0 20px rgba(139, 92, 246, 0.3)",
@@ -521,7 +498,7 @@ function ProjectCard({ project }: { project: any }) {
     <div className="group overflow-hidden rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 p-1 transition-all duration-300 hover:from-purple-900 hover:to-purple-800">
       <div className="h-full rounded-lg bg-gray-900 overflow-hidden">
         <motion.div
-          className="relative h-80 overflow-hidden" // Increased height from h-64 to h-80
+          className={`relative h-96 overflow-hidden`}
           initial="initial"
           whileHover="hover"
           variants={imageContainerVariants}
@@ -540,13 +517,11 @@ function ProjectCard({ project }: { project: any }) {
           />
         </motion.div>
 
-        <div className="p-6">
-          <div className="mb-2 inline-block rounded bg-purple-500/10 px-2 py-1 text-xs font-medium text-purple-400">
-            {project.category}
+        {project.description && (
+          <div className="px-4 pb-4 pt-2">
+            <p className="text-gray-400 text-center text-sm">{project.description}</p>
           </div>
-          <h3 className="mb-2 text-xl font-bold text-white">{project.title}</h3>
-          <p className="text-gray-400">{project.description}</p>
-        </div>
+        )}
       </div>
     </div>
   )

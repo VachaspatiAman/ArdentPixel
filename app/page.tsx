@@ -10,7 +10,7 @@ import { use } from "react"
 export default function Home() {
   const router = useRouter()
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col pt-16 md:pt-0">
       {/* Hero Section */}
       <section className="relative w-full bg-gradient-to-br from-black to-gray-900 py-20 md:py-32">
         <div  className="absolute inset-0 bg-cover bg-center opacity-100"
@@ -87,7 +87,7 @@ export default function Home() {
                 <div className="h-full rounded-lg bg-gray-900 p-6">
                   <div className="mb-4 h-48 overflow-hidden rounded-lg">
                     <Image
-                      src="/images/webDev.png?height=400&width=600"
+                      src="/images/web1.png?height=400&width=600"
                       alt="Web Development"
                       width={600}
                       height={400}
@@ -166,37 +166,45 @@ export default function Home() {
             </p>
           </AnimatedSection>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3].map((item, index) => (
-              <AnimatedCard key={item} delay={0.2 * (index + 1)}>
-                <div className="rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 p-6 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            {
+              quote:
+                "Choosing Ardent Pixels for digital marketing was the smartest move for our business. Their tailored campaigns and creative ideas have consistently delivered strong ROI.",
+              role: "Operations Manager, HealthyRoots",
+            },
+            {
+              quote:
+                "Choosing Ardent Pixels for website and app development was the right decision—they are knowledgeable, communicative, and deliver excellent work on time",
+              role: "Business Development Manager, CraftNook Studios",
+            },
+            {
+              quote:
+                "Ardent Pixels was a pleasure to work with! Their iterative approach and clear communication ensured our real estate app was both beautiful and user-friendly.",
+              role: " CEO, RealtySpace",
+            },
+          ].map((item, index) => (
+            <AnimatedCard key={item.role} delay={0.2 * (index + 1)}>
+              <div className="rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 p-6 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 min-h-[250px] flex flex-col justify-between">
+                <div>
                   <div className="mb-4 flex items-center">
                     <MessageSquare className="mr-2 h-5 w-5 text-purple-500" />
                     <div className="text-purple-400">Testimonial</div>
                   </div>
                   <p className="mb-6 text-gray-300">
-                    "Ardent Pixels transformed our digital presence completely. Their team's creativity and technical
-                    expertise delivered results beyond our expectations."
+                    {item.quote}
                   </p>
-                  <div className="flex items-center">
-                    <div className="mr-3 h-10 w-10 overflow-hidden rounded-full bg-gray-700">
-                      <Image
-                        src="/placeholder.svg?height=100&width=100"
-                        alt="Client"
-                        width={100}
-                        height={100}
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div>
-                      <p className="font-medium text-white">Client Name</p>
-                      <p className="text-sm text-gray-400">Company Position</p>
-                    </div>
+                </div>
+                <div className="flex items-center mt-auto">
+                  <div>
+                    <p className="font-medium text-white">{item.name}</p>
+                    <p className="text-sm text-gray-400">{item.role}</p>
                   </div>
                 </div>
-              </AnimatedCard>
-            ))}
-          </div>
+              </div>
+            </AnimatedCard>
+          ))}
+        </div>
         </div>
       </section>
 

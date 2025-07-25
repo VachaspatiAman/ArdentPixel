@@ -22,6 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+         {/* Favicon icons */}
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+      </head>
       <body className={`${inter.className} bg-black text-white flex flex-col`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
